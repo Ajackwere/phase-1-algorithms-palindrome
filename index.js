@@ -1,9 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const testString = word.toLowerCase();
+  const newTestString = testString.split('').reverse().join('');
+
+  return testString === newTestString ? true : false;
 }
 
 /* 
   Add your pseudocode here
+
+  Convert the string to lowercaps and store it in a variable (const testString)
+  split the variable testString into characters
+  add the splitted characters from last to first and store them in a newTestString variable
+  compare the testString with newTestString using strict equality ===
+  if the two strings are equal, return 'true', else 'false'
+
+  for example Dad should return 'is a palindrome'
 */
 
 /*
